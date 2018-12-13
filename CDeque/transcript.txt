@@ -1,0 +1,25 @@
+start
+*** {DQ(0/3) EMPTY}
+Insert begin 1
+*** {DQ(1/3) two}
+Insert begin 1
+*** {DQ(2/3) one, two}
+Insert end 1
+*** {DQ(3/3) one, two, three}
+After inserts: first one last three
+Try to insert to full
+Insert begin 0
+remove end size 3 empty 0
+remove end three
+*** {DQ(2/3) one, two}
+i is 0
+remove beginone
+*** {DQ(1/3) two}
+remove end size 1 empty 0
+remove end two
+*** {DQ(0/3) EMPTY}
+Try to remove from empty
+remove end size 0 empty 1
+Remove threw exception: Remove from empty CDeque
+About to kill the CDeque
+Destructor has been called!
