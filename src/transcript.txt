@@ -1,0 +1,23 @@
+Employee has ID 1 and salary $10.00 and name Employee
+Customer has ID 2 and checking account ID 3
+Customer/Employee has ID 4 and checking account ID 5 and salary $30.00  and name none
+
+Depositing $100.00 in customer account 
+Deposit receipt: {Receipt: Acct# 3, Type: Deposit, Amount: $100.00}
+
+Prior to monthly processing:
+  Customer balance is 100.00
+  Customer/Employee balance is  0.00
+
+Receipts from Monthly Processing:
+  {Receipt: Acct# 1, Type: Payment, Amount: $10.00}
+  {Receipt: Acct# 3, Type: Withdrawal, Amount: $1.00}
+  {Receipt: Acct# 3, Type: Fee, Amount: $1.00}
+  {Receipt: Acct# 4, Type: Payment, Amount: $30.00}
+  {Receipt: Acct# 5, Type: Deposit, Amount: $30.00}
+  {Receipt: Acct# 5, Type: Withdrawal, Amount: $1.00}
+  {Receipt: Acct# 5, Type: Fee, Amount: $1.00}
+
+After monthly processing:
+  Customer balance is 99.00
+  Customer/Employee balance is  29.00
